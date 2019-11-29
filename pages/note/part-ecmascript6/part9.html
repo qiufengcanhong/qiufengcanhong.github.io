@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>函数参数的默认值 | 秋枫残红的首页</title>
+    <meta name="description" content="秋枫残红的前端记录">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.1e617c1c.css" as="style"><link rel="preload" href="/assets/js/app.4e796291.js" as="script"><link rel="preload" href="/assets/js/2.5955c47d.js" as="script"><link rel="preload" href="/assets/js/24.40aa88f0.js" as="script"><link rel="prefetch" href="/assets/js/10.023e598c.js"><link rel="prefetch" href="/assets/js/11.5d456fb5.js"><link rel="prefetch" href="/assets/js/12.a48b2b00.js"><link rel="prefetch" href="/assets/js/13.772c8218.js"><link rel="prefetch" href="/assets/js/14.c9a689e9.js"><link rel="prefetch" href="/assets/js/15.e0615018.js"><link rel="prefetch" href="/assets/js/16.5517e456.js"><link rel="prefetch" href="/assets/js/17.a5c720e2.js"><link rel="prefetch" href="/assets/js/18.5e7781f7.js"><link rel="prefetch" href="/assets/js/19.ce689d57.js"><link rel="prefetch" href="/assets/js/20.093ab0eb.js"><link rel="prefetch" href="/assets/js/21.b6e24c88.js"><link rel="prefetch" href="/assets/js/22.04c63522.js"><link rel="prefetch" href="/assets/js/23.df78c435.js"><link rel="prefetch" href="/assets/js/25.a6a9d7e7.js"><link rel="prefetch" href="/assets/js/26.b3e9e28a.js"><link rel="prefetch" href="/assets/js/27.de39e65c.js"><link rel="prefetch" href="/assets/js/28.d2f133d4.js"><link rel="prefetch" href="/assets/js/29.9ff465c5.js"><link rel="prefetch" href="/assets/js/3.d3f6d4b4.js"><link rel="prefetch" href="/assets/js/30.2340f0f7.js"><link rel="prefetch" href="/assets/js/31.267d45b0.js"><link rel="prefetch" href="/assets/js/32.bc086275.js"><link rel="prefetch" href="/assets/js/33.dbe4e841.js"><link rel="prefetch" href="/assets/js/34.a04ad3b1.js"><link rel="prefetch" href="/assets/js/35.b13839ab.js"><link rel="prefetch" href="/assets/js/36.ff7d9cc1.js"><link rel="prefetch" href="/assets/js/37.9e9bda59.js"><link rel="prefetch" href="/assets/js/38.e1285c70.js"><link rel="prefetch" href="/assets/js/39.97f9aab7.js"><link rel="prefetch" href="/assets/js/4.be3fbf0d.js"><link rel="prefetch" href="/assets/js/40.5ccc1141.js"><link rel="prefetch" href="/assets/js/41.9af4572a.js"><link rel="prefetch" href="/assets/js/42.2df722e2.js"><link rel="prefetch" href="/assets/js/43.415554cc.js"><link rel="prefetch" href="/assets/js/44.fb1e0cd2.js"><link rel="prefetch" href="/assets/js/45.d54e6782.js"><link rel="prefetch" href="/assets/js/46.4be2f821.js"><link rel="prefetch" href="/assets/js/47.3a6aa224.js"><link rel="prefetch" href="/assets/js/48.e23e972b.js"><link rel="prefetch" href="/assets/js/49.e844112a.js"><link rel="prefetch" href="/assets/js/5.da4ea6b7.js"><link rel="prefetch" href="/assets/js/50.5b77c8c9.js"><link rel="prefetch" href="/assets/js/51.e6f5c89d.js"><link rel="prefetch" href="/assets/js/6.e197d4ff.js"><link rel="prefetch" href="/assets/js/7.daf8f688.js"><link rel="prefetch" href="/assets/js/8.0a387549.js"><link rel="prefetch" href="/assets/js/9.56278697.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1e617c1c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="秋枫残红的首页" class="logo"> <span class="site-name can-hide">秋枫残红的首页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/part-html/part1.html" class="nav-link">Html</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-css/part1.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-javascript/part1.html" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-ecmascript6/part1.html" class="nav-link">ECMAScript6</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-vue/part1.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-react/part1.html" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-node/part1.html" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-sequelize/part1.html" class="nav-link">Sequeize</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-redis/part1.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-tool/part1.html" class="nav-link">开发工具</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-net/part1.html" class="nav-link">网络</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常踩坑" class="dropdown-title"><span class="title">日常踩坑</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/question/part-javascript/part1.html" class="nav-link">Javascript</a></li></ul></div></div><div class="nav-item"><a href="/pages/practice/part1.html" class="nav-link">每日一题</a></div><div class="nav-item"><a href="https://github.com/qiufengcanhong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/part-html/part1.html" class="nav-link">Html</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-css/part1.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-javascript/part1.html" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-ecmascript6/part1.html" class="nav-link">ECMAScript6</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-vue/part1.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-react/part1.html" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-node/part1.html" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-sequelize/part1.html" class="nav-link">Sequeize</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-redis/part1.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-tool/part1.html" class="nav-link">开发工具</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-net/part1.html" class="nav-link">网络</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常踩坑" class="dropdown-title"><span class="title">日常踩坑</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/question/part-javascript/part1.html" class="nav-link">Javascript</a></li></ul></div></div><div class="nav-item"><a href="/pages/practice/part1.html" class="nav-link">每日一题</a></div><div class="nav-item"><a href="https://github.com/qiufengcanhong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>阶段一</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/note/part-ecmascript6/part1.html" class="sidebar-link">let与const</a></li><li><a href="/pages/note/part-ecmascript6/part2.html" class="sidebar-link">数值的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part3.html" class="sidebar-link">解构赋值</a></li><li><a href="/pages/note/part-ecmascript6/part4.html" class="sidebar-link">字符串的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part5.html" class="sidebar-link">模板字符串</a></li><li><a href="/pages/note/part-ecmascript6/part6.html" class="sidebar-link">正则的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part7.html" class="sidebar-link">数组的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part8.html" class="sidebar-link">对象的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part9.html" class="active sidebar-link">函数的扩展</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part9.html#函数参数的默认值" class="sidebar-link">函数参数的默认值</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part9.html#rest参数（剩余参数）" class="sidebar-link">rest参数（剩余参数）</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part9.html#name属性" class="sidebar-link">name属性</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part9.html#箭头函数" class="sidebar-link">箭头函数</a></li></ul></li><li><a href="/pages/note/part-ecmascript6/part10.html" class="sidebar-link">set与map</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="函数参数的默认值"><a href="#函数参数的默认值" class="header-anchor">#</a> 函数参数的默认值</h2> <ul><li>ES6 允许为函数的参数设置默认值，即直接写在参数定义的后面。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function log(x, y = 'World') {
+  console.log(x, y);
+}
+
+log('Hello') // Hello World
+log('Hello', 'China') // Hello China
+log('Hello', '') // Hello
+</code></pre></div><ul><li>参数变量是默认声明的，所以不能用let或const再次声明。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function foo(x = 5) {
+  let x = 1; // error
+  const x = 2; // error
+}
+</code></pre></div><ul><li>使用参数默认值时，函数不能有同名参数。
+// 不报错</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function foo(x, x, y) {
+  // ...
+}
+
+// 报错
+function foo(x, x, y = 1) {
+  // ...
+}
+</code></pre></div><ul><li>另外，一个容易忽略的地方是，参数默认值不是传值的，而是每次都重新计算默认值表达式的值。也就是说，参数默认值是惰性求值的。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let x = 99;
+function foo(p = x + 1) {
+  console.log(p);
+}
+foo() // 100
+x = 100;
+foo() // 101
+</code></pre></div><ul><li>与结构赋值默认值结合使用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function foo({x, y = 5}) {
+  console.log(x, y);
+}
+foo({}) // undefined 5
+foo({x: 1}) // 1 5
+foo({x: 1, y: 2}) // 1 2
+foo() // TypeError: Cannot read property 'x' of undefined
+</code></pre></div><ul><li>以上这种用法在传参时，无法省略参数，不需要传参的情况，也要传一个空对象，可以对起稍作修改</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function foo({x, y = 5} = {}) {
+  console.log(x, y);
+}
+
+foo() // undefined 5
+</code></pre></div><ul><li>通常情况下，我们将需要设置默认值的参数放在参数序列的尾部，因为放在头部将无法省略传参。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function f(x = 1, y) {
+  return [x, y];
+}
+f() // [1, undefined]
+f(2) // [2, undefined])
+f(, 1) // 报错
+f(undefined, 1) // [1, 1]
+</code></pre></div><ul><li>我们知道在JS中函数也是一个对象，且拥有一个属性----Length,用来返回函数参数的个数，但是当设置了参数默认值之后，这个属性将会失真，无法使用。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>(function (a) {}).length // 1
+(function (a = 5) {}).length // 0
+(function (a, b, c = 5) {}).length // 2
+</code></pre></div><ul><li>一旦设置了参数的默认值，函数进行声明初始化时，参数会形成一个单独的作用域（context）。等到初始化结束，这个作用域就会消失。这种语法行为，在不设置参数默认值时，是不会出现的。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var x = 1;
+function f(x, y = x) {
+  console.log(y);
+}
+f(2) // 2
+
+let x = 1;
+function f(y = x) {
+  let x = 2;
+  console.log(y);
+}
+f() // 1
+</code></pre></div><h2 id="rest参数（剩余参数）"><a href="#rest参数（剩余参数）" class="header-anchor">#</a> rest参数（剩余参数）</h2> <ul><li>在ES6中引入了新参数rest，用法为（...value），它的作用是将剩余参数存入一个数组中</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function add(...values) {
+  let sum = 0;
+  for (var val of values) {
+    sum += val;
+  }
+  return sum;
+}
+add(2, 5, 3) // 10
+</code></pre></div><ul><li>需要注意的是该函数只能放在参数序列的最后一位，否则会报错</li></ul> <h2 id="name属性"><a href="#name属性" class="header-anchor">#</a> name属性</h2> <ul><li>函数的name属性，返回该函数的函数名。</li> <li>ES6 对这个属性的行为做出了一些修改。如果将一个匿名函数赋值给一个变量，ES5 的name属性，会返回空字符串，而 ES6 的name属性会返回实际的函数名。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var f = function () {};
+// ES5
+f.name // &quot;&quot;
+// ES6
+f.name // &quot;f&quot;
+</code></pre></div><ul><li>若果是具名函数，即使把他赋值给其他变量，也会返回原来的名字。</li></ul> <h2 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h2> <ul><li>ES6允许使用箭头定义函数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var f = v =&gt; v;
+</code></pre></div><p>等价于</p> <div class="language- extra-class"><pre class="language-text"><code>var f = function(v) {
+  return v;
+};
+</code></pre></div><ul><li>如果箭头函数不需要参数或需要多个参数，就使用一个圆括号代表参数部分。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var f = () =&gt; 5;
+// 等同于
+var f = function () { return 5 };
+
+var sum = (num1, num2) =&gt; num1 + num2;
+// 等同于
+var sum = function(num1, num2) {
+  return num1 + num2;
+};
+</code></pre></div><ul><li>由于大括号被解释为代码块，所以如果箭头函数直接返回一个对象，必须在对象外面加上括号，否则会报错。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 报错
+let getTempItem = id =&gt; { id: id, name: &quot;Temp&quot; };
+
+// 不报错
+let getTempItem = id =&gt; ({ id: id, name: &quot;Temp&quot; });
+</code></pre></div><ul><li>如果箭头函数只有一行语句，且不需要返回值，可以采用下面的写法，就不用写大括号了。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let fn = () =&gt; void doesNotReturn();
+</code></pre></div><ul><li>箭头函数也可以与结构赋值一起使用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const full = ({ first, last }) =&gt; first + ' ' + last;
+// 等同于
+function full(person) {
+  return person.first + ' ' + person.last;
+}
+</code></pre></div><ul><li>箭头函数可以是函数变得更加美观，也可以简化回调函数</li> <li><strong>箭头函数虽然有诸多优点，但在使用时，还需注意以下几点</strong> <ul><li><strong>函数体内的this是函数定义是所在的宿主对象，而不是调用时所在的对象</strong></li> <li><strong>不可以作为构造函数</strong></li> <li><strong>不可以使用arguments对象，可用rest实现相同功能</strong></li> <li><strong>不可以使用yield命令，因此箭头函数不能用作 Generator 函数。</strong></li></ul></li></ul> <hr> <blockquote><p>关于第一点尤其值得注意，我们知道的是在普通函数中它的this指针表示函数调用时，调用函数的那个对象，而在箭头函数中，该指针只与定义这个函数的对象有关，也就是说这个函数从定义完成时开始，他的this就是不可改变的，所以箭头函数也不可以使用apply()与call()方法</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>function foo() {
+  setTimeout(() =&gt; {
+    console.log('id:', this.id);
+  }, 100);
+}
+var id = 21;
+foo.call({ id: 42 });
+//id:42
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function Timer() {
+  this.s1 = 0;
+  this.s2 = 0;
+  // 箭头函数
+  setInterval(() =&gt; this.s1++, 1000);
+  // 普通函数
+  setInterval(function () {
+    this.s2++;
+  }, 1000);
+}
+var timer = new Timer();
+setTimeout(() =&gt; console.log('s1: ', timer.s1), 3100);
+setTimeout(() =&gt; console.log('s2: ', timer.s2), 3100);
+</code></pre></div><ul><li>箭头函数this的指向固定化并不是因为其内部机制绑定this不可改变，而是因为箭头函数根本没有this，导致内部代码快的this就是外部代码块的this，也正因如此，箭头函数无法作为构造函数
+举个栗子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function foo() {
+  return () =&gt; {
+    return () =&gt; {
+      return () =&gt; {
+        console.log('id:', this.id);
+      };
+    };
+  };
+}
+var f = foo.call({id: 1});
+var t1 = f.call({id: 2})()(); // id: 1
+var t2 = f().call({id: 3})(); // id: 1
+var t3 = f()().call({id: 4}); // id: 1
+</code></pre></div><ul><li>上述结果也是因为箭头函数没有自己的this，导致call()然并卵，所以都指向最外层函数的this</li></ul> <hr></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/note/part-ecmascript6/part8.html" class="prev">对象的扩展</a></span> <span class="next"><a href="/pages/note/part-ecmascript6/part10.html">set与map</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4e796291.js" defer></script><script src="/assets/js/2.5955c47d.js" defer></script><script src="/assets/js/24.40aa88f0.js" defer></script>
+  </body>
+</html>

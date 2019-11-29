@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>扩展运算符（...） | 秋枫残红的首页</title>
+    <meta name="description" content="秋枫残红的前端记录">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.1e617c1c.css" as="style"><link rel="preload" href="/assets/js/app.4e796291.js" as="script"><link rel="preload" href="/assets/js/2.5955c47d.js" as="script"><link rel="preload" href="/assets/js/22.04c63522.js" as="script"><link rel="prefetch" href="/assets/js/10.023e598c.js"><link rel="prefetch" href="/assets/js/11.5d456fb5.js"><link rel="prefetch" href="/assets/js/12.a48b2b00.js"><link rel="prefetch" href="/assets/js/13.772c8218.js"><link rel="prefetch" href="/assets/js/14.c9a689e9.js"><link rel="prefetch" href="/assets/js/15.e0615018.js"><link rel="prefetch" href="/assets/js/16.5517e456.js"><link rel="prefetch" href="/assets/js/17.a5c720e2.js"><link rel="prefetch" href="/assets/js/18.5e7781f7.js"><link rel="prefetch" href="/assets/js/19.ce689d57.js"><link rel="prefetch" href="/assets/js/20.093ab0eb.js"><link rel="prefetch" href="/assets/js/21.b6e24c88.js"><link rel="prefetch" href="/assets/js/23.df78c435.js"><link rel="prefetch" href="/assets/js/24.40aa88f0.js"><link rel="prefetch" href="/assets/js/25.a6a9d7e7.js"><link rel="prefetch" href="/assets/js/26.b3e9e28a.js"><link rel="prefetch" href="/assets/js/27.de39e65c.js"><link rel="prefetch" href="/assets/js/28.d2f133d4.js"><link rel="prefetch" href="/assets/js/29.9ff465c5.js"><link rel="prefetch" href="/assets/js/3.d3f6d4b4.js"><link rel="prefetch" href="/assets/js/30.2340f0f7.js"><link rel="prefetch" href="/assets/js/31.267d45b0.js"><link rel="prefetch" href="/assets/js/32.bc086275.js"><link rel="prefetch" href="/assets/js/33.dbe4e841.js"><link rel="prefetch" href="/assets/js/34.a04ad3b1.js"><link rel="prefetch" href="/assets/js/35.b13839ab.js"><link rel="prefetch" href="/assets/js/36.ff7d9cc1.js"><link rel="prefetch" href="/assets/js/37.9e9bda59.js"><link rel="prefetch" href="/assets/js/38.e1285c70.js"><link rel="prefetch" href="/assets/js/39.97f9aab7.js"><link rel="prefetch" href="/assets/js/4.be3fbf0d.js"><link rel="prefetch" href="/assets/js/40.5ccc1141.js"><link rel="prefetch" href="/assets/js/41.9af4572a.js"><link rel="prefetch" href="/assets/js/42.2df722e2.js"><link rel="prefetch" href="/assets/js/43.415554cc.js"><link rel="prefetch" href="/assets/js/44.fb1e0cd2.js"><link rel="prefetch" href="/assets/js/45.d54e6782.js"><link rel="prefetch" href="/assets/js/46.4be2f821.js"><link rel="prefetch" href="/assets/js/47.3a6aa224.js"><link rel="prefetch" href="/assets/js/48.e23e972b.js"><link rel="prefetch" href="/assets/js/49.e844112a.js"><link rel="prefetch" href="/assets/js/5.da4ea6b7.js"><link rel="prefetch" href="/assets/js/50.5b77c8c9.js"><link rel="prefetch" href="/assets/js/51.e6f5c89d.js"><link rel="prefetch" href="/assets/js/6.e197d4ff.js"><link rel="prefetch" href="/assets/js/7.daf8f688.js"><link rel="prefetch" href="/assets/js/8.0a387549.js"><link rel="prefetch" href="/assets/js/9.56278697.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1e617c1c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="秋枫残红的首页" class="logo"> <span class="site-name can-hide">秋枫残红的首页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/part-html/part1.html" class="nav-link">Html</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-css/part1.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-javascript/part1.html" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-ecmascript6/part1.html" class="nav-link">ECMAScript6</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-vue/part1.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-react/part1.html" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-node/part1.html" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-sequelize/part1.html" class="nav-link">Sequeize</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-redis/part1.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-tool/part1.html" class="nav-link">开发工具</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-net/part1.html" class="nav-link">网络</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常踩坑" class="dropdown-title"><span class="title">日常踩坑</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/question/part-javascript/part1.html" class="nav-link">Javascript</a></li></ul></div></div><div class="nav-item"><a href="/pages/practice/part1.html" class="nav-link">每日一题</a></div><div class="nav-item"><a href="https://github.com/qiufengcanhong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/part-html/part1.html" class="nav-link">Html</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-css/part1.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-javascript/part1.html" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-ecmascript6/part1.html" class="nav-link">ECMAScript6</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-vue/part1.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-react/part1.html" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-node/part1.html" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-sequelize/part1.html" class="nav-link">Sequeize</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-redis/part1.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-tool/part1.html" class="nav-link">开发工具</a></li><li class="dropdown-item"><!----> <a href="/pages/note/part-net/part1.html" class="nav-link">网络</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常踩坑" class="dropdown-title"><span class="title">日常踩坑</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/question/part-javascript/part1.html" class="nav-link">Javascript</a></li></ul></div></div><div class="nav-item"><a href="/pages/practice/part1.html" class="nav-link">每日一题</a></div><div class="nav-item"><a href="https://github.com/qiufengcanhong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>阶段一</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/note/part-ecmascript6/part1.html" class="sidebar-link">let与const</a></li><li><a href="/pages/note/part-ecmascript6/part2.html" class="sidebar-link">数值的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part3.html" class="sidebar-link">解构赋值</a></li><li><a href="/pages/note/part-ecmascript6/part4.html" class="sidebar-link">字符串的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part5.html" class="sidebar-link">模板字符串</a></li><li><a href="/pages/note/part-ecmascript6/part6.html" class="sidebar-link">正则的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part7.html" class="active sidebar-link">数组的扩展</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#扩展运算符（-）" class="sidebar-link">扩展运算符（...）</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#array-from" class="sidebar-link">Array.from()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#array-of" class="sidebar-link">Array.of()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#数组实例的-copywithin" class="sidebar-link">数组实例的 copyWithin()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#数组实例的-find-和-findindex" class="sidebar-link">数组实例的 find() 和 findIndex()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#数组实例的fill" class="sidebar-link">数组实例的fill()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#数组实例的-entries-，keys-和-values" class="sidebar-link">数组实例的 entries()，keys() 和 values()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#数组实例的-includes" class="sidebar-link">数组实例的 includes()</a></li><li class="sidebar-sub-header"><a href="/pages/note/part-ecmascript6/part7.html#对于数组空位的处理" class="sidebar-link">对于数组空位的处理</a></li></ul></li><li><a href="/pages/note/part-ecmascript6/part8.html" class="sidebar-link">对象的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part9.html" class="sidebar-link">函数的扩展</a></li><li><a href="/pages/note/part-ecmascript6/part10.html" class="sidebar-link">set与map</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="扩展运算符（-）"><a href="#扩展运算符（-）" class="header-anchor">#</a> 扩展运算符（...）</h2> <h3 id="基本用法"><a href="#基本用法" class="header-anchor">#</a> 基本用法</h3> <ul><li>该运算符作用正好与rest参数作用相反，用于展开数组为参数序列，用逗号分割。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>console.log(...[1, 2, 3])
+// 1 2 3
+
+console.log(1, ...[2, 3, 4], 5)
+// 1 2 3 4 5
+
+[...document.querySelectorAll('div')]
+// [&lt;div&gt;, &lt;div&gt;, &lt;div&gt;]
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function push(array, ...items) {
+  array.push(...items);
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+const numbers = [4, 38];
+add(...numbers) // 42
+</code></pre></div><h3 id="应用"><a href="#应用" class="header-anchor">#</a> 应用</h3> <ol><li>复制数组，数组作为一个复合型的数据结构，直接复制的话只是复制了指向数组的指针</li></ol> <div class="language- extra-class"><pre class="language-text"><code>//错误
+const a1 = [1, 2];
+const a2 = a1;
+a2[0] = 2;
+a1 // [2, 2]
+
+//正确
+const a1 = [1, 2];
+// 写法一
+const a2 = [...a1];
+// 写法二
+const [...a2] = a1;
+</code></pre></div><ol start="2"><li>合并数组</li></ol> <div class="language- extra-class"><pre class="language-text"><code>var arr1 = ['a', 'b'];
+var arr2 = ['c'];
+var arr3 = ['d', 'e'];
+[...arr1, ...arr2, ...arr3]
+</code></pre></div><ol start="3"><li>与解构赋值结合起来，用于生成新数组，只能将扩展运算符放在最后一位</li></ol> <div class="language- extra-class"><pre class="language-text"><code>const [first, ...rest] = [1, 2, 3, 4, 5];
+first // 1
+rest  // [2, 3, 4, 5]
+
+const [first, ...rest] = [];
+first // undefined
+rest  // []
+
+const [first, ...rest] = [&quot;foo&quot;];
+first  // &quot;foo&quot;
+rest   // []
+</code></pre></div><ol start="4"><li>转变字符串为数组，可以正确识别四个字节的字符串</li></ol> <div class="language- extra-class"><pre class="language-text"><code>let str = 'x\uD83D\uDE80y';
+
+str.split('').reverse().join('')
+// 'y\uDE80\uD83Dx'
+
+[...str].reverse().join('')
+// 'y\uD83D\uDE80x'
+</code></pre></div><ol start="5"><li>将实现了 Iterator 接口的对象转化为数组</li></ol> <div class="language- extra-class"><pre class="language-text"><code>let nodeList = document.querySelectorAll('div');
+let array = [...nodeList];
+</code></pre></div><ul><li>nodeList是一个类似数组的对象，可以将其转化为真正的数组</li> <li>对于那些没有部署 Iterator 接口的类似数组的对象，扩展运算符就无法将其转为真正的数组,可以使用Array.from</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arrayLike = {
+  '0': 'a',
+  '1': 'b',
+  '2': 'c',
+  length: 3
+};
+// TypeError: Cannot spread non-iterable object.
+let arr = [...arrayLike];
+</code></pre></div><ol start="6"><li>Map 和 Set 结构，Generator 函数</li></ol> <ul><li>这些结构都可以转化为数组，扩展运算符内部调用的是数据结构的 Iterator 接口，因此只要具有 Iterator 接口的对象，都可以使用扩展运算符</li></ul> <h2 id="array-from"><a href="#array-from" class="header-anchor">#</a> Array.from()</h2> <ul><li>Array.from方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括ES6新增的数据结构Set和Map）。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    length: 3
+};
+let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
+</code></pre></div><ul><li>值得注意的是扩展运算符也可以将其他结构转化为数组，但扩展运算符是调用遍历器接口做到的，而Array.from()是通过一个对象的length属性，换句话说只要一个对象有length属性就可以将他看做类数组对象</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Array.from({ length: 3 });
+// [ undefined, undefined, undefined ]
+</code></pre></div><ul><li>如果参数是一个数组，则返回原数组。</li> <li>该方法还可以接受第二个参数，对新数组中的每个元素进行操作，类似map方法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Array.from([1, 2, 3], (x) =&gt; x * x)
+// [1, 4, 9]
+</code></pre></div><h2 id="array-of"><a href="#array-of" class="header-anchor">#</a> Array.of()</h2> <ul><li>该函数的出现主要是为了弥补Array构造函数的不足，Array的构造函数会因为参数的数量不同而产生一些不一致的问题，如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Array() // []
+Array(3) // [, , ,]
+Array(3, 11, 8) // [3, 11, 8]
+</code></pre></div><ul><li>当没有参数是，返回一个空数组，当有一个参数时，将该参数作为数组长度，当参数长度大于俩个时，才以这些参数作为元素构成数组。</li></ul> <h2 id="数组实例的-copywithin"><a href="#数组实例的-copywithin" class="header-anchor">#</a> 数组实例的 copyWithin()</h2> <ul><li>该方法用于改变数组内部的值通过赋值数组内部其他值来覆盖需要改变的值，该方法接受三个参数
+<ul><li>target（必需）：从该位置开始替换数据。</li> <li>start（可选）：从该位置开始读取数据，默认为0。如果为负值，表示倒数。</li> <li>end（可选）：到该位置前停止读取数据，默认等于数组长度。如果为负值，表示倒数。</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 将3号位复制到0号位
+[1, 2, 3, 4, 5].copyWithin(0, 3, 4)
+// [4, 2, 3, 4, 5]
+
+// -2相当于3号位，-1相当于4号位
+[1, 2, 3, 4, 5].copyWithin(0, -2, -1)
+// [4, 2, 3, 4, 5]
+
+// 将3号位复制到0号位
+[].copyWithin.call({length: 5, 3: 1}, 0, 3)
+// {0: 1, 3: 1, length: 5}
+
+// 将2号位到数组结束，复制到0号位
+let i32a = new Int32Array([1, 2, 3, 4, 5]);
+i32a.copyWithin(0, 2);
+// Int32Array [3, 4, 5, 4, 5]
+</code></pre></div><h2 id="数组实例的-find-和-findindex"><a href="#数组实例的-find-和-findindex" class="header-anchor">#</a> 数组实例的 find() 和 findIndex()</h2> <ul><li>find方法用于找出数组内符合某个条件的值，参数为一回调函数，返回true时表示找到，找到返回该值，找不到返回undefined</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[1, 4, -5, 10].find((n) =&gt; n &lt; 0)
+// -5
+</code></pre></div><ul><li>findindex方法与上类似，不同的是返回下标，若未找到返回-1</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[1, 5, 10, 15].findIndex(function(value, index, arr) {
+  return value &gt; 9;
+}) // 2
+</code></pre></div><h2 id="数组实例的fill"><a href="#数组实例的fill" class="header-anchor">#</a> 数组实例的fill()</h2> <ul><li>该方法使用指定值填充数组，可用于数组的初始化</li></ul> <div class="language- extra-class"><pre class="language-text"><code>['a', 'b', 'c'].fill(7)
+// [7, 7, 7]
+
+new Array(3).fill(7)
+// [7, 7, 7]
+</code></pre></div><ul><li>该方法也可使用第二个和第三个参数，表示填充开始的位置和结束的位置</li></ul> <h2 id="数组实例的-entries-，keys-和-values"><a href="#数组实例的-entries-，keys-和-values" class="header-anchor">#</a> 数组实例的 entries()，keys() 和 values()</h2> <ul><li>遍历器方法，分别返回键数组，值数组，键值对数组（这三个方法扔数组里，没一点卵用）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>for (let index of ['a', 'b'].keys()) {
+  console.log(index);
+}
+// 0
+// 1
+
+for (let elem of ['a', 'b'].values()) {
+  console.log(elem);
+}
+// 'a'
+// 'b'
+
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 &quot;a&quot;
+// 1 &quot;b&quot;
+</code></pre></div><h2 id="数组实例的-includes"><a href="#数组实例的-includes" class="header-anchor">#</a> 数组实例的 includes()</h2> <ul><li>与字符串的includes类似，检查数组内有没有某个值,可添加第二个参数，表示开始位置，超过数组长度返回false，若为负数，表示倒数，此时超过数组长度，表示从0开始</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[1, 2, 3].includes(3, 3); 
+</code></pre></div><h2 id="对于数组空位的处理"><a href="#对于数组空位的处理" class="header-anchor">#</a> 对于数组空位的处理</h2> <ul><li>在ES5中对数组空位的处理是比较不一致的，规则如下
+<ul><li>forEach(), filter(), every() 和some()都会跳过空位。</li> <li>map()会跳过空位，但会保留这个值</li> <li>join()和toString()会将空位视为undefined，而undefined和null会被处*
+理成空字符串。</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>// forEach方法
+[,'a'].forEach((x,i) =&gt; console.log(i)); // 1
+
+// filter方法
+['a',,'b'].filter(x =&gt; true) // ['a','b']
+
+// every方法
+[,'a'].every(x =&gt; x==='a') // true
+
+// some方法
+[,'a'].some(x =&gt; x !== 'a') // false
+
+// map方法
+[,'a'].map(x =&gt; 1) // [,1]
+
+// join方法
+[,'a',undefined,null].join('#') // &quot;#a##&quot;
+
+// toString方法
+[,'a',undefined,null].toString() // &quot;,a,,&quot;
+</code></pre></div><ul><li>但是在ES6中对此类现象做出了改变，ES6中凡是新增的方法及扩展运算符都将数组空位视为undefined，for...of也不会跳过空位</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// entries()
+[...[,'a'].entries()] // [[0,undefined], [1,&quot;a&quot;]]
+
+// keys()
+[...[,'a'].keys()] // [0,1]
+
+// values()
+[...[,'a'].values()] // [undefined,&quot;a&quot;]
+
+// find()
+[,'a'].find(x =&gt; true) // undefined
+
+// findIndex()
+[,'a'].findIndex(x =&gt; true) // 0
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/note/part-ecmascript6/part6.html" class="prev">正则的扩展</a></span> <span class="next"><a href="/pages/note/part-ecmascript6/part8.html">对象的扩展</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4e796291.js" defer></script><script src="/assets/js/2.5955c47d.js" defer></script><script src="/assets/js/22.04c63522.js" defer></script>
+  </body>
+</html>
